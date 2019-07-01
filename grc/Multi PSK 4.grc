@@ -105,7 +105,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(214, 272)</value>
+      <value>(208, 285)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -265,7 +265,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(474, 127)</value>
+      <value>(467, 127)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -324,7 +324,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(214, 131)</value>
+      <value>(207, 131)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -379,7 +379,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(692, 199)</value>
+      <value>(707, 275)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -647,7 +647,7 @@
     </param>
     <param>
       <key>nconnections</key>
-      <value>1</value>
+      <value>4</value>
     </param>
     <param>
       <key>size</key>
@@ -734,7 +734,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(690, 111)</value>
+      <value>(704, 131)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1002,7 +1002,7 @@
     </param>
     <param>
       <key>nconnections</key>
-      <value>1</value>
+      <value>4</value>
     </param>
     <param>
       <key>size</key>
@@ -1054,11 +1054,11 @@
     </param>
     <param>
       <key>ymax</key>
-      <value>1</value>
+      <value>3</value>
     </param>
     <param>
       <key>ymin</key>
-      <value>-1</value>
+      <value>-3</value>
     </param>
   </block>
   <connection>
@@ -1084,5 +1084,41 @@
     <sink_block_id>blocks_throttle_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>mpsk4_0</source_block_id>
+    <sink_block_id>qtgui_const_sink_x_0</sink_block_id>
+    <source_key>1</source_key>
+    <sink_key>1</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>mpsk4_0</source_block_id>
+    <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
+    <source_key>1</source_key>
+    <sink_key>1</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>mpsk4_0</source_block_id>
+    <sink_block_id>qtgui_const_sink_x_0</sink_block_id>
+    <source_key>2</source_key>
+    <sink_key>2</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>mpsk4_0</source_block_id>
+    <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
+    <source_key>2</source_key>
+    <sink_key>2</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>mpsk4_0</source_block_id>
+    <sink_block_id>qtgui_const_sink_x_0</sink_block_id>
+    <source_key>3</source_key>
+    <sink_key>3</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>mpsk4_0</source_block_id>
+    <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
+    <source_key>3</source_key>
+    <sink_key>3</sink_key>
   </connection>
 </flow_graph>

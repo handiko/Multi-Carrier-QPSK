@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Multi PSK 4
-# Generated: Mon Jul  1 10:14:06 2019
+# Generated: Mon Jul  1 10:15:41 2019
 ##################################################
 
 if __name__ == '__main__':
@@ -75,10 +75,10 @@ class multi_psk_4(gr.top_block, Qt.QWidget):
         	1024, #size
         	samp_rate, #samp_rate
         	"", #name
-        	1 #number of inputs
+        	4 #number of inputs
         )
         self.qtgui_time_sink_x_0.set_update_time(0.10)
-        self.qtgui_time_sink_x_0.set_y_axis(-1, 1)
+        self.qtgui_time_sink_x_0.set_y_axis(-3, 3)
         
         self.qtgui_time_sink_x_0.set_y_label('Amplitude', "")
         
@@ -105,7 +105,7 @@ class multi_psk_4(gr.top_block, Qt.QWidget):
         alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
                   1.0, 1.0, 1.0, 1.0, 1.0]
         
-        for i in xrange(2*1):
+        for i in xrange(2*4):
             if len(labels[i]) == 0:
                 if(i % 2 == 0):
                     self.qtgui_time_sink_x_0.set_line_label(i, "Re{{Data {0}}}".format(i/2))
@@ -124,7 +124,7 @@ class multi_psk_4(gr.top_block, Qt.QWidget):
         self.qtgui_const_sink_x_0 = qtgui.const_sink_c(
         	1024, #size
         	"", #name
-        	1 #number of inputs
+        	4 #number of inputs
         )
         self.qtgui_const_sink_x_0.set_update_time(0.10)
         self.qtgui_const_sink_x_0.set_y_axis(-2, 2)
@@ -149,7 +149,7 @@ class multi_psk_4(gr.top_block, Qt.QWidget):
                    0, 0, 0, 0, 0]
         alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
                   1.0, 1.0, 1.0, 1.0, 1.0]
-        for i in xrange(1):
+        for i in xrange(4):
             if len(labels[i]) == 0:
                 self.qtgui_const_sink_x_0.set_line_label(i, "Data {0}".format(i))
             else:
@@ -177,6 +177,12 @@ class multi_psk_4(gr.top_block, Qt.QWidget):
         self.connect((self.blocks_throttle_0, 0), (self.qtgui_const_sink_x_0, 0))    
         self.connect((self.blocks_throttle_0, 0), (self.qtgui_time_sink_x_0, 0))    
         self.connect((self.mpsk4_0, 0), (self.blocks_throttle_0, 0))    
+        self.connect((self.mpsk4_0, 3), (self.qtgui_const_sink_x_0, 3))    
+        self.connect((self.mpsk4_0, 2), (self.qtgui_const_sink_x_0, 2))    
+        self.connect((self.mpsk4_0, 1), (self.qtgui_const_sink_x_0, 1))    
+        self.connect((self.mpsk4_0, 1), (self.qtgui_time_sink_x_0, 1))    
+        self.connect((self.mpsk4_0, 2), (self.qtgui_time_sink_x_0, 2))    
+        self.connect((self.mpsk4_0, 3), (self.qtgui_time_sink_x_0, 3))    
 
     def closeEvent(self, event):
         self.settings = Qt.QSettings("GNU Radio", "multi_psk_4")
