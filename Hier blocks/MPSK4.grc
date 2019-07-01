@@ -105,7 +105,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(326, 17)</value>
+      <value>(642, 100)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -144,7 +144,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(391, 155)</value>
+      <value>(514, 103)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -156,7 +156,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>const</value>
+      <value>param_constel</value>
     </param>
   </block>
   <block>
@@ -171,7 +171,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(190, 155)</value>
+      <value>(197, 99)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -183,7 +183,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>32000</value>
+      <value>param_samp_rate</value>
     </param>
   </block>
   <block>
@@ -198,7 +198,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(287, 155)</value>
+      <value>(346, 99)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -210,7 +210,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>4</value>
+      <value>param_sps</value>
     </param>
   </block>
   <block>
@@ -323,7 +323,7 @@
     </param>
     <param>
       <key>constellation</key>
-      <value>const</value>
+      <value>constel</value>
     </param>
     <param>
       <key>affinity</key>
@@ -386,7 +386,7 @@
     </param>
     <param>
       <key>constellation</key>
-      <value>const</value>
+      <value>constel</value>
     </param>
     <param>
       <key>affinity</key>
@@ -449,7 +449,7 @@
     </param>
     <param>
       <key>constellation</key>
-      <value>const</value>
+      <value>constel</value>
     </param>
     <param>
       <key>affinity</key>
@@ -512,7 +512,7 @@
     </param>
     <param>
       <key>constellation</key>
-      <value>const</value>
+      <value>constel</value>
     </param>
     <param>
       <key>affinity</key>
@@ -642,7 +642,7 @@
     </param>
     <param>
       <key>optional</key>
-      <value>False</value>
+      <value>True</value>
     </param>
     <param>
       <key>vlen</key>
@@ -685,7 +685,7 @@
     </param>
     <param>
       <key>optional</key>
-      <value>False</value>
+      <value>True</value>
     </param>
     <param>
       <key>vlen</key>
@@ -704,7 +704,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(644, 547)</value>
+      <value>(643, 548)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -728,7 +728,7 @@
     </param>
     <param>
       <key>optional</key>
-      <value>False</value>
+      <value>True</value>
     </param>
     <param>
       <key>vlen</key>
@@ -776,6 +776,135 @@
     <param>
       <key>vlen</key>
       <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>parameter</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(512, 10)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>param_constel</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value>Constelation</value>
+    </param>
+    <param>
+      <key>short_id</key>
+      <value></value>
+    </param>
+    <param>
+      <key>type</key>
+      <value></value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>parameter</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(196, 7)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>param_samp_rate</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value>Sample rate</value>
+    </param>
+    <param>
+      <key>short_id</key>
+      <value></value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>eng_float</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>parameter</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(345, 7)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>param_sps</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value>Sample per symbol</value>
+    </param>
+    <param>
+      <key>short_id</key>
+      <value></value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>intx</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>0</value>
     </param>
   </block>
   <connection>
